@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+
+    /* Background Color */
+    --primary-color: red;
+    --secondary-color: #eec94f;
+    --hover-color: rgb(118 85 225 / 30%);
+    --bg-white: #fff;
+    --bg-black: #000;
+    --bg-gray: #eee;
+    --border-color: red;
+    --gradient: linear-gradient(90deg, rgba(238, 79, 79, 0.814) 10%, rgb(220, 192, 68) 100%);
+
+    /* Text Color */
+    --primary-text: red;
+    --secondary-text: #eec94f;
+    --text-white: #fff;
+    --text-black: #000;
+    --text-gray: rgb(119, 119, 119);
+
+    /* Font Family */
+    --primary-font: 'Rajdhani', sans-serif;
+    --secondary-font: 'Open Sans', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 3rem 1rem;
+    min-height: 100vh;
+    scroll-margin-top: 5rem;
+}
+
+body {
+    background: var(--bg-gray);
+    color: var(--text-black);
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 800;
+    scroll-margin-top: 5rem;
+}
+
+p {
+    font-family: var(--secondary-font);
+}
+
+/* Style for side scrollbar */
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-gray);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+/* NAV - BAR */
+.navbar {
+    background: var(--bg-white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    font-family: var(--primary-font);
+    font-size: 20px;
+}
+
+.navbar .fa-cart-shopping {
+    padding-top: 5px;
+    padding-right: 10px;
+    font-size: 30px;
+}
+
+.navbar .navbar-brand {
+    font-size: 30px;
+    color: var(--primary-color) !important;
+}
+
+.navbar .navbar-brand:hover {
+    color: var(--bg-black) !important;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: var(--text-black) !important;
+    border-bottom: transparent;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    border-bottom: var(--border-color) solid 2px;
+}
+
+.navbar .dropdown-item {
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: var(--primary-color);
+}
+
+.navbar-collapse.show {
+    z-index: 9999;
+}
+
+.search-box form input {
+    box-shadow: none;
+    outline: none;
+    border: 1.7px solid transparent;
+    background: var(--bg-gray);
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all .2s;
+}
+
+.search-box form input:focus {
+    box-shadow: 0 0 5px var(--border-color);
+    border: 1.7px solid var(--border-color);
+}
+
+.search-box form .btn {
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+    border: 2px solid var(--border-color) !important;
+}
+
+.search-box form .btn:active {
+    background-color: var(--bg-black);
+    color: var(--bg-white);
+}
+
+/* HOME START */
+.home-container {
+    text-align: center;
+    position: relative;
+    color: var(--text-white) !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("../assests/Images/Home-bg.jpg");
+}
+
+.home-container h3 {
+    font-size: 1.5rem;
+}
+
+.home-container h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.home-container p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.home-container .btn {
+    font-size: 20px;
+    color: var(--text-black);
+    width: 40%;
+    background: var(--primary-color);
+    border: 2px solid var(--bg-black);
+}
+
+.home-container .btn:hover {
+    color: var(--text-white);
+    background: var(--bg-black);
+    border: 2px solid var(--primary-color);
+}
+
+/* Accessories */
+.accesories-sect {
+    padding: 0 3rem;
+}
+
+.accesories-sect h1 {
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.accesories-sect p {
+    font-size: 20px;
+}
+
+.accesories-sect img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+.accesories-sect .card {
+    margin: 20px 60px;
+    background: var(--bg-gray);
+    border: none;
+    border-radius: 10px;
+    box-shadow: none;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.accesories-sect .card:hover {
+    box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.3);
+    transition: all .3s;
+}
+
+.accesories-sect .btn {
+    background: var(--text-black) !important;
+    border: none;
+}
+
+.accesories-sect .btn:hover {
+    background: var(--primary-color) !important;
+    border: 2px solid var(--bg-black);
+}
+
+/* Contact Us */
+.contact-container {
+    padding: 0rem 3rem;
+    background: var(--bg-black);
+    color: var(--text-white);
+}
+
+.contact-title {
+    font-size: 35px;
+    line-height: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-family: var(--primary-font);
+}
+
+.contact-left p i {
+    color: var(--primary-color);
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.contact-left {
+    row-gap: 5px;
+}
+
+.social-icons a i {
+    color: var(--secondary-color);
+    font-size: 23px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.social-icons a i:hover {
+    color: var(--primary-color);
+}
+
+.contact-right form input,
+.contact-right form textarea {
+    border: 0;
+    padding: 10px 5px;
+    outline: none;
+    border: 1.7px solid transparent;
+    background: var(--bg-gray);
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all .2s;
+}
+
+.contact-right form input:focus,
+.contact-right form textarea:focus {
+    border: 1.7px solid var(--primary-color);
+}
+
+.contact-right form {
+    row-gap: 20px;
+}
+
+.contact-right form button {
+    width: 150px;
+    border: 2px solid var(--primary-color);
+}
+
+#send {
+    background: var(--primary-color);
+    color: whitesmoke;
+}
+
+#send:hover {
+    background: var(--bg-white);
+    color: var(--primary-color);
+}
+
+#send:focus {
+    border: 1px solid transparent;
+    background-color: var(--primary-color);
+}

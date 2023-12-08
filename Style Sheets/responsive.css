@@ -1,0 +1,204 @@
+@media (max-width: 1199.5px) {
+    h1 {
+        font-size: 3.75rem;
+    }
+
+    h2 {
+        font-size: 2.1875rem;
+    }
+
+    h3 {
+        font-size: 1.875rem;
+        line-height: 2.6875rem;
+    }
+
+    h5 {
+        font-size: 1.0625rem;
+    }
+
+}
+
+@media (max-width: 990px) {
+    .container {
+        padding: 0 3rem;
+    }
+
+    .banner_wrapper {
+        padding-top: 4rem;
+    }
+
+
+    .accesories-sect .card {
+        margin: 10px 10px;
+    }
+
+    .contact-container .contact-right {
+        margin-top: 3%;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    h2 {
+        font-size: 1.875rem;
+        line-height: 2.375rem;
+    }
+
+    h3 {
+        font-size: 1.5625rem;
+        line-height: 2.1875rem;
+    }
+
+    .accesories-sect .card {
+        margin: 10px 10px;
+    }
+
+    .contact-container .contact-right {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 600.5px) {
+    .accesories-sect .card {
+        margin: 10px 30px;
+    }
+
+    .contact-container .contact-right {
+        margin-top: 5px;
+    }
+
+    .contact-container .contact-right {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 580.5px) {
+    .navbar-toggler {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 9999;
+    }
+
+    .navbar-collapse {
+        max-height: 100vh;
+        overflow-y: hidden;
+    }
+
+    .navbar-nav {
+        margin-top: 10px;
+    }
+
+    .navbar-wrapper .navbar-brand {
+        font-size: 20px;
+        align-items: flex-start;
+    }
+
+    .navbar-wrapper .navbar-toggler {
+        font-size: 20px;
+        padding: 4px 8px;
+        order: 2;
+    }
+
+    .accesories-sect .card {
+        margin: 10px 10px;
+    }
+
+    .contact-container .contact-right {
+        margin-top: 40px;
+    }
+
+    @media (max-width: 425px) {
+        .navbar {
+            font-size: 18px;
+        }
+
+        h1 {
+            font: 11px;
+        }
+
+        .navbar-wrapper .navbar-brand {
+            font-size: 20px;
+            align-items: flex-start;
+        }
+
+        .navbar-wrapper .navbar-toggler {
+            font-size: 20px;
+            padding: 4px 8px;
+            order: 2;
+        }
+
+        .accesories-sect .card {
+            margin: 10px 5px;
+        }
+
+        .contact-container .contact-right {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 395px) {
+    .navbar {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 80px;
+    }
+
+    h2 {
+        font-size: 1.875rem;
+        line-height: 2.375rem;
+    }
+
+    h3 {
+        font-size: 1.5625rem;
+        line-height: 2.1875rem;
+    }
+
+    .navbar-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-wrapper .navbar-brand {
+        font-size: 15px;
+        top: 0;
+        text-align: unset;
+        align-items: flex-start;
+    }
+
+    .navbar-wrapper .fa-cart-shopping {
+        font-size: 15px;
+
+    }
+
+    .navbar-wrapper .navbar-toggler {
+        font-size: 20px;
+        padding: 4px 8px;
+        order: 2;
+    }
+
+    .navbar-wrapper .fa-bars-staggered {
+        font-size: 20px;
+    }
+
+    .accesories-sect .card {
+        margin: 10px 0px;
+    }
+
+    .contact-container .contact-right {
+        margin-top: 40px;
+    }
+}
